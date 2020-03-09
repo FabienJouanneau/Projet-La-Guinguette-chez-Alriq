@@ -11,4 +11,110 @@
 
 
 /*footer & comments*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+footer {
+    border: 3px solid black;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+    background-color: #404040;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section1 {
+    width: 20%;
+    display: inline-block;
+}
+
+.fakeInput {
+    width: 90%;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+}
+.fakeBtn {
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+}
+
+.section2 {
+    margin: 0px 50px;
+    width: 20%;
+}
+
+.section2 ul{
+    list-style-type: none;
+}
+
+.section2 li {
+    padding: 20px;
+}
+
+
+.section3 {
+    width: 20%;
+}
+.tweet {
+    color: green;
+}
+
+
+.tweeterIcon {
+    float: left;
+    margin: 5px;
+}
+
+.section4 {
+    width: 20%;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+    margin: 0 5%;
+}
+
+.titleFooter {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.section2 ul li a{
+    color: white;
+}
+
+.sectionTitle {
+    text-align: center;
+}
+
+.section4 .icons a {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        border: none;
+    }
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        width: 90%;
+        margin: 0 5%;
+    }
+ }
+ 
