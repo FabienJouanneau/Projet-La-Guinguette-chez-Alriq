@@ -1,14 +1,47 @@
 /*header and carousel */
-
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7EFCE; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: block;
+}
+nav ul li.logo {
+    font-size: 30px;
+  }
+nav ul {
+    background-color: rgb(150, 150, 51);
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 8px;
+    font-size: 0;
+}
+nav ul li {
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    width: 15%;
+    line-height: 40px;
+}
+nav ul li:hover {
+    background-color: rgb(243, 197, 140);
+    cursor: pointer;
+    border-radius: 8px;
+}  
+nav ul li a {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*caroulse*/
 
 
 
 
 /*body and stuff */
-
-
-
-
-
+/*caroulse*/
 /*footer & comments*/
 
