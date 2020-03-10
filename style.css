@@ -1,26 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*header and carousel */
-
-
-
-
-
-/*body and stuff */
-body{
-    display:flex;
-    justify-content:center;
-    width : 100%;
-    font-family: 'Roboto Condensed', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7EFCE; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: block;
+    margin-top: 0px;
+}
+header {
+    margin-top: 0px;
+}
+nav ul li.logo {
+    font-size: 30px;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 8px;
+    background-color:rgb(187, 180, 152);
+    text-align: center;
     font-size: 20px;
 }
+nav ul li {
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    width: 15%;
+    line-height: 100%;
+}
+nav ul li:hover {
+    background-color: rgb(112, 107, 85);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 1s;
 
+}  
+nav ul li a {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*carousel*/
+div#slider{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    height: 20%;
+    padding-top: 1%;
+}
+div#slider figure img { width: 20%; height: auto; float: center; }
+div#slider { width: 80%; max-width: 1000px; overflow: hidden }
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
+  div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: center;
+    animation: 25s slidy infinite;
+  }
+/*body and stuff */
 
 section.activity{
-    width:80%;
+    width:100%;
     display:flex;
     flex-flow: row nowrap;
-
+    margin: 50px auto;
 }
 
 article.Card{
@@ -79,9 +144,10 @@ div.foodMenu button{
     background-color: #gb(218, 205, 171);;
     padding: 10px 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border : none;
 }
+
 
 div.foodMenu button.left{
     border-bottom-left-radius: 10px;
@@ -97,11 +163,11 @@ border-right: none;
 
 @media only screen and (max-width:600px){
     section.activity{
-        width:90%;
+        margin: 50px auto;
+        width:100%;
         display:flex;
         flex-flow: column wrap;
-        align-content: center;
-    
+        align-items:center;
     }
     article.Card{
         width : 100%;
@@ -110,6 +176,10 @@ border-right: none;
 
     img.Card{
         display:none;
+    }
+
+    div.foodMenu button{
+        font-size: 3vw;
     }
 
     img.Card-mobil{
@@ -123,6 +193,7 @@ border-right: none;
         opacity: 70%;
     }
 }
+
 /*footer & comments*/
 
 
