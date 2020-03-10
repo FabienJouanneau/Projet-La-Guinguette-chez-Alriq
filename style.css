@@ -7,11 +7,122 @@
 
 
 /*body and stuff */
+body{
+    display:flex;
+    justify-content:center;
+    width : 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
 
 
+section.activity{
+    width:80%;
+    display:flex;
+    flex-flow: row nowrap;
 
+}
 
+article.Card{
+    width:80%;
+    display:flex;
+    flex-flow: column wrap;
+    align-items:center;
+    border: 1px solid black;
+    border-radius:10px;
+    margin: 10px;
 
+    background-color: #FFFFFF;
+}
+
+img.Card{
+    width:100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    opacity: 80%;
+}
+
+img.Card-mobil{
+    display:none;
+}
+
+img.Card:hover{
+    opacity: 70%;
+}
+
+article.Card h2{
+    width:90%;
+    margin-top:10px;
+    text-align: center;
+}
+
+article.Card p{
+    width:90%;
+    margin-bottom:3px;
+    text-align: justify;
+}
+
+div.foodMenu{
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(218, 205, 171);
+}
+
+div.foodMenu button{
+    width : 33.3333333%;
+    height: 100%;
+    margin : 0px;
+    text-align: center;
+    background-color: #gb(218, 205, 171);;
+    padding: 10px 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2vw;
+    border : none;
+}
+
+div.foodMenu button.left{
+    border-bottom-left-radius: 10px;
+    border-right: 1px solid black;
+    border-left: none;
+}
+
+div.foodMenu button.right{
+border-bottom-right-radius: 10px;
+border-left: 1px solid black;
+border-right: none;
+}
+
+@media only screen and (max-width:600px){
+    section.activity{
+        width:90%;
+        display:flex;
+        flex-flow: column wrap;
+        align-content: center;
+    
+    }
+    article.Card{
+        width : 100%;
+        flex-flow: column wrap;
+    }
+
+    img.Card{
+        display:none;
+    }
+
+    img.Card-mobil{
+        display: initial;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        opacity: 80%;
+    }
+    img.Card-mobil:hover{
+        opacity: 70%;
+    }
+}
 /*footer & comments*/
 
 
