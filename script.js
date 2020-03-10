@@ -9,7 +9,7 @@ document.getElementById("addInput").addEventListener('keypress', function (e) {
 })
 
 function addOneComment() {
-    if (document.getElementById("addInput").value != "" && document.getElementsByClassName("comment").length <6) {
+    if (document.getElementById("addInput").value != "" && document.getElementsByClassName("comment").length < 6) {
       //set selector in variables
       const unorderedList = document.getElementById("list");
       const listItem = document.createElement("li");
@@ -22,6 +22,9 @@ function addOneComment() {
       //append the li to the ul, then clear the input field
       unorderedList.appendChild(listItem);
       document.getElementById("addInput").value = "";
+      setTimeout(function(){
+        listItem.style.opacity = 1 ;
+    }, 300);
     }
 }
 
