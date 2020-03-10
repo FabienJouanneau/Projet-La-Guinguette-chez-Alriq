@@ -18,6 +18,9 @@ body {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+header {
+    height: 50px;
+}
 .top {
     height: 85px;
 }
@@ -50,6 +53,7 @@ nav ul li {
 }
 nav ul li:hover a {
     color: #404040;
+    padding: 60px;
 }
 nav ul li:hover {
     background-color:#EFEFEF;
@@ -59,7 +63,7 @@ nav ul li:hover {
 }  
 nav ul li a {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -68,9 +72,9 @@ div#slider{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top: -50px;
+    margin-bottom: -15px;
     height: 20%;
-    padding-top: 50px;
     z-index: 1;
 }
 div#slider figure img { width: 20%; height: auto; float: center; margin-top: 80px; }
@@ -187,6 +191,17 @@ border-right: none;
         display:flex;
         flex-flow: column wrap;
         align-items:center;
+
+    }
+    .navbar {
+        position: absolute;
+        padding-top: -15px;
+    }
+    body {
+        margin-top: 0px;
+    }
+    div#slider {
+        display: none;
     }
     article.Card{
         width : 100%;
