@@ -1,18 +1,16 @@
 /*header and carousel */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F7EFCE; 
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
     display: block;
     margin-top: 0px;
-}
-header {
-    margin-top: 0px;
-}
-nav ul li.logo {
-    font-size: 30px;
 }
 nav ul {
     display: flex;
@@ -25,10 +23,11 @@ nav ul {
     font-size: 20px;
 }
 nav ul li {
-    font-size: 30px;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 15%;
+    width: 30%;
     line-height: 100%;
 }
 nav ul li:hover {
