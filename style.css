@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*header and carousel */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F7EFCE; 
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 90%;
     display: block;
     margin-top: 0px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
-header {
-    margin-top: 0px;
+.top {
+    height: 85px;
 }
-nav ul li.logo {
-    font-size: 30px;
+.navbar {
+    position: fixed;
+    width: 90%;
+    z-index: 2;
+    margin-top: -13px;
 }
 nav ul {
     display: flex;
@@ -24,13 +35,16 @@ nav ul {
     border-radius: 8px;
     background-color:rgb(187, 180, 152);
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    padding: 3px;
 }
 nav ul li {
-    font-size: 30px;
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 15%;
+    font-size: 30px;
+    width: 30%;
     line-height: 100%;
 }
 nav ul li:hover {
@@ -38,15 +52,13 @@ nav ul li:hover {
     cursor: pointer;
     border-radius: 8px;
     transition: all 1s;
-
 }  
 nav ul li a {
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: none;
 }
-
 /*carousel*/
 div#slider{
     display: block;
@@ -54,7 +66,8 @@ div#slider{
     margin-right: auto;
     margin-top: 1%;
     height: 20%;
-    padding-top: 1%;
+    padding-top: 8%;
+    z-index: 1;
 }
 div#slider figure img { width: 20%; height: auto; float: center; }
 div#slider { width: 80%; max-width: 1000px; overflow: hidden }
@@ -301,16 +314,24 @@ footer {
 
 }
 
+.commentPresentation {
+    text-align: left;
+}
 
 .allComments {
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/000/132/328/non_2x/red-party-popper-background-vector.jpg');
+    background-image: url('https://previews.123rf.com/images/boarding1now/boarding1now1812/boarding1now181200090/113378564-new-year-s-eve-fireworks-background-portrait-format-colorful-years-year-firework-backgrounds.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid black;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+    height: 400px;
 }   
 
 .fakeComment {
@@ -325,6 +346,7 @@ footer {
     display: inline-block;
     border-radius: 5px;
     background-color: white;
+    margin-right: 45px;
 }
 
 .comment {
@@ -341,26 +363,14 @@ footer {
     background-color: white;
     opacity: 0;
     transition:opacity .5s ease-in-out;
+    margin-right: 45px;
+    overflow-wrap: break-word;
 }
 
-.form {
-    margin: 0 auto;
-    width: 40%;
-    text-align: center;
-    display: block;
-}
-
-.addInput {
-    height: 75px;
-    width: 250px;
-    -moz-box-shadow: .2em .2em .5em #333;
-    -webkit-box-shadow: .2em .2em .5em #333;
-    box-shadow: .2em .2em .5em #333;
-}
 
 .latestComments {
-    width: 20%;
-    margin: 10px auto;
+    width: 40%;
+    margin: 40px auto;
     text-align: center;
     font-size: 25px;
     padding: 10px;
@@ -368,6 +378,38 @@ footer {
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
+    background-color: #404040;
+    color: white;
+    font-weight: bold;
+}
+
+
+.form {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    display: block;
+}
+
+.addInput {
+    height: 75px;
+    width: 100%;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;a
+}
+
+.addButton {
+    height: 50px;
+    width: 25%;
+    margin-top: 15px;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;a
+}
+
+.addButton:hover {
+    cursor: pointer;
 }
 
 
@@ -383,6 +425,15 @@ footer {
         width: 90%;
         margin: 0 5%;
     }
+    .addButton {
+        width: 40%;
+    }
+    
  }
- 
+
+ @media (max-width: 1000px) {
+    .allComments{
+        height: 100%;
+    }
+ }
  
