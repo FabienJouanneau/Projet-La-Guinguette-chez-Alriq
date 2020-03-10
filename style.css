@@ -7,7 +7,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F7EFCE; 
+    background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -26,6 +26,8 @@ body {
     width: 90%;
     z-index: 2;
     margin-top: -13px;
+    background-color: #404040;
+    border-radius: 3px;
 }
 nav ul {
     display: flex;
@@ -33,7 +35,7 @@ nav ul {
     justify-content: space-evenly;
     list-style: none;
     border-radius: 8px;
-    background-color:rgb(187, 180, 152);
+    /* background-color:rgb(187, 180, 152); */
     text-align: center;
     font-size: 30px;
     padding: 3px;
@@ -212,6 +214,7 @@ div.foodMenu button.right{
 
 footer {
     border: 3px solid black;
+    border-radius: 3px;
     padding: 10px;
     display: flex;
     margin: 10px;
