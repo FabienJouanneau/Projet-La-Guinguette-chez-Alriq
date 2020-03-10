@@ -193,8 +193,7 @@ border-right: none;
 
     }
     .navbar {
-        position: absolute;
-        padding-top: -15px;
+        display: none;
     }
     body {
         margin-top: 0px;
