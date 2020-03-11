@@ -18,6 +18,9 @@ body {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+header {
+    height: 50px;
+}
 .top {
     height: 85px;
 }
@@ -27,50 +30,57 @@ body {
     z-index: 2;
     margin-top: -13px;
     background-color: #404040;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 nav ul {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
-    border-radius: 8px;
-    /* background-color:rgb(187, 180, 152); */
     text-align: center;
-    font-size: 30px;
-    padding: 3px;
+    padding: 0.1px
 }
 nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30%;
+    width: 25%;
     line-height: 100%;
 }
 nav ul li:hover a {
-    color: #404040;
+    color: #da1f1f;
 }
 nav ul li:hover {
     background-color:#EFEFEF;
     cursor: pointer;
     border-radius: 8px;
-    transition: all 1s;
+    transition: all 300ms;
 }  
 nav ul li a {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
+    margin-top: 15px;
+    padding: 40px;
+}
+.burger {
+    display: none;
+    position: center;
+    cursor: pointer;
+}
+.buger:hover {
+    color: #da1f1f;
 }
 /*carousel*/
 div#slider{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top: -50px;
+    margin-bottom: -15px;
     height: 20%;
-    padding-top: 50px;
     z-index: 1;
 }
 div#slider figure img { width: 20%; height: auto; float: center; margin-top: 80px; }
@@ -225,7 +235,21 @@ border-right: none;
         display:flex;
         flex-flow: column wrap;
         align-items:center;
-        justify-content : center;
+    }
+    .burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        display: none;
+    }
+    body {
+        margin-top: 0px;
+    }
+    div#slider {
+        display: none;
+>>>>>>> feature/header
     }
     article.Card{
         min-width : 100%;
