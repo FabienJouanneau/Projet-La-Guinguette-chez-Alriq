@@ -30,3 +30,10 @@ function addOneComment() {
     }
 }
 
+let burger = document.getElementById(elementid:'burger')
+let navbar = document.getElementById(elementid:'navbar')
+burger.addEventListener('click', (event))
+    navbar.classList.toggel(token'open-burger');
+})
+
+

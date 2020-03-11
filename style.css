@@ -63,6 +63,15 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
     margin-top: 15px;
+    padding: 40px;
+}
+.burger {
+    display: none;
+    position: center;
+    cursor: pointer;
+}
+.buger:hover {
+    color: #da1f1f;
 }
 /*carousel*/
 div#slider{
@@ -190,11 +199,13 @@ border-right: none;
         align-items:center;
 
     }
+    .burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .navbar {
         display: none;
-    }
-    .burger {
-        display: block;
     }
     body {
         margin-top: 0px;
