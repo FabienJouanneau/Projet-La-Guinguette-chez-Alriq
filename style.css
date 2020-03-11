@@ -10,7 +10,7 @@ body {
     background-color: #EFEFEF;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 85%;
     display: block;
     margin-top: 0px;
     -webkit-user-select: none; /* Safari */        
@@ -23,7 +23,7 @@ body {
 }
 .navbar {
     position: fixed;
-    width: 70%;
+    width: 85%;
     z-index: 2;
     margin-top: -13px;
     background-color: #404040;
@@ -105,11 +105,11 @@ section.activity{
     justify-content: space-evenly;
     flex-flow: row nowrap;
     margin: 50px auto;
-    border-top:1px solid black;
+    /*border-top:1px solid black;*/
 }
     /*CARD*/
 article.Card{
-    max-width:20%;
+    max-width:30%;
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
@@ -153,7 +153,7 @@ article div div.foodMenu{
     flex-direction: row;
     justify-content: space-between;
     border-radius: 10px;
-    background-color: rgb(187, 9, 9);
+    background-color: #DA1F1F;
     align-items: flex-start;
 }
 
@@ -161,6 +161,11 @@ article div h2{
     text-align: center;
     font-weight:bold;
     margin : 10px 0px;
+    font-size: 2.5vw;
+}
+
+article div p{
+    font-size: 1.5vw;
 }
 
         /*BOUTONS CARD*/
@@ -185,7 +190,7 @@ div.foodMenu button{
     text-align: center;
     padding: 10px 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1vw;
+    font-size: 1.8vw;
     border : none;
 }
 div button.full{
@@ -194,15 +199,13 @@ div button.full{
     border:none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-size: 1vw;
+    font-size: 1.8vw;
 }
 
 article.Card button{
-    background-color: rgb(187, 9, 9);
+    background-color: #DA1F1F;
     color: white;
 }
-
-
 
 div.foodMenu button.left{
     border-bottom-left-radius: 10px;
@@ -232,13 +235,19 @@ border-right: none;
         margin: 5px 0px;
         flex-flow: column wrap;
     }
+    article div p{
+        font-size: 3vw;
+    }
+    article div h2{
+        font-size: 4vw;
+    }
 
     img.Card{
         display:none;
     }
 
     div.foodMenu button, div button.full{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     
     img.Card-mobil{
@@ -253,58 +262,85 @@ border-right: none;
     }
 }
 /*LOCALISATION ET INFOS PRATIQUES*/
-article.location{
-    width: 80%;
-    display:flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
+article#contactAndLoc{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+article#contactAndLoc{
+    font-size: 2vw;
+}
+div.map{
+    width:59%;
+    border-radius: 10px;
     border: 1px solid black;
+}
+
+iframe.map{
+    width: 100%;
     border-radius: 10px;
 }
-article.location div {
+div.bigBlocContact{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 40%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
 }
-article.location div div{
+div.blocContact{
     width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column; 
     justify-content: space-between;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    align-self: center;
 }
-    iframe.location{
-        width: 60%;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    section.location div p{
-        width: 100%;
-        align-self:center;
-        text-align: center;
-    }
+div.blocInfo{
+    display: flex;
+}
 
-    section.location div h2{
-        width:100%;
-        background-color: rgb(187, 9, 9);
-        color: white;
-        align-self:center;
-        margin: 0;
-    }
-    h2.info{
-        border-top-right-radius: 10px;
-    }
-    a.contact{
-        width: 33.3333%;
-        color: inherit;
-    }
+div.blocInfoLogo{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+}
 
+div.blocInfoLogo i{
+    margin : 10px;
+}
+
+div.blocInfoText{
+    width:80%;
+    display: flex;
+    flex-direction : column;
+    justify-content: space-around;
+}
+
+div.blocContact h2{
+    background-color: #DA1F1F;
+    color : white;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 2.3vw;
+    padding:2px;
+}
+@media only screen and (max-width:700px){
+    article#contactAndLoc{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    div.blocContact, div.bigBlocContact, div.map{
+        width: 90%;
+        margin-top: 10px;
+        align-self: center;
+    }
+    div.blocContact h2{
+        font-size: 4vw;
+    }
+}
 
 /*footer & comments*/
-
 
 footer {
     border: 3px solid black;
@@ -355,7 +391,7 @@ footer {
     width: 20%;
 }
 .tweet {
-    color: green;
+    color: #DA1F1F;
 }
 
 
