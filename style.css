@@ -96,25 +96,26 @@ div#slider { width: 80%; max-width: 1000px; overflow: hidden }
   }
 /*body and stuff */
 
+/*ACTIVITES - CONCERT/RESTAURATION/EXPOSITIONS*/
 section.activity{
     width:100%;
     display:flex;
+    justify-content: space-evenly;
     flex-flow: row nowrap;
     margin: 50px auto;
+    border-top:1px solid black;
 }
-
+    /*CARD*/
 article.Card{
-    width:90%;
+    max-width:20%;
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items:center;
     border: 1px solid black;
     border-radius:10px;
     margin: 10px;
-
-    background-color: #FFFFFF;
 }
-
+        /*IMAGES DES CARDS*/
 img.Card{
     width:100%;
     border-top-right-radius: 10px;
@@ -129,11 +130,13 @@ img.Card-mobil{
 img.Card:hover{
     opacity: 70%;
 }
-
-article.Card h2{
-    width:90%;
-    margin-top:10px;
-    text-align: center;
+        /*TEXTS SOUS IMAGES*/
+article.Card div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 article.Card p{
@@ -142,28 +145,63 @@ article.Card p{
     text-align: justify;
 }
 
-div.foodMenu{
+article div div.foodMenu{
     width:100%;
     display:flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     border-radius: 10px;
-    background-color: rgb(229, 178, 231);
+    background-color: rgb(187, 9, 9);
+    align-items: flex-start;
+}
+
+article div h2{
+    text-align: center;
+    font-weight:bold;
+    margin : 10px 0px;
+}
+
+        /*BOUTONS CARD*/
+section.activity button:hover{
+    cursor: pointer;
+}
+
+div.foodMenu a{
+    width: 33.333333%;
+}
+
+div.activityMusic, div.activityExpo {
+    width: 100%;
+    display: flex;
+    align-items: space-between;
 }
 
 div.foodMenu button{
-    width : 33.3333333%;
+    width : 100%;
     height: 100%;
     margin : 0px;
     text-align: center;
-    background-color: rgb(229, 178, 231);
     padding: 10px 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1vw;
     border : none;
 }
+div button.full{
+    width: 100%;
+    padding: 10px 0px;
+    border:none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1vw;
+}
 
-/*BOUTONS CARD*/
+article.Card button{
+    background-color: rgb(187, 9, 9);
+    color: white;
+}
+
+
+
 div.foodMenu button.left{
     border-bottom-left-radius: 10px;
     border-right: 1px solid white;
@@ -181,13 +219,15 @@ border-right: none;
 @media only screen and (max-width:700px){
     section.activity{
         margin: 50px auto;
-        width:100%;
+        width:70%;
         display:flex;
         flex-flow: column wrap;
         align-items:center;
+        justify-content : center;
     }
     article.Card{
-        width : 100%;
+        min-width : 100%;
+        margin: 5px 0px;
         flex-flow: column wrap;
     }
 
@@ -195,10 +235,10 @@ border-right: none;
         display:none;
     }
 
-    div.foodMenu button{
-        font-size: 4vw;
+    div.foodMenu button, div button.full{
+        font-size: 3vw;
     }
-
+    
     img.Card-mobil{
         display: initial;
         width: 100%;
@@ -210,6 +250,56 @@ border-right: none;
         opacity: 70%;
     }
 }
+/*LOCALISATION ET INFOS PRATIQUES*/
+article.location{
+    width: 80%;
+    display:flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+article.location div {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+article.location div div{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-self: center;
+}
+    iframe.location{
+        width: 60%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    section.location div p{
+        width: 100%;
+        align-self:center;
+        text-align: center;
+    }
+
+    section.location div h2{
+        width:100%;
+        background-color: rgb(187, 9, 9);
+        color: white;
+        align-self:center;
+        margin: 0;
+    }
+    h2.info{
+        border-top-right-radius: 10px;
+    }
+    a.contact{
+        width: 33.3333%;
+        color: inherit;
+    }
+
 
 /*footer & comments*/
 
