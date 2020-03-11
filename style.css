@@ -10,7 +10,7 @@ body {
     background-color: #EFEFEF;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 85%;
     display: block;
     margin-top: 0px;
     -webkit-user-select: none; /* Safari */        
@@ -23,7 +23,7 @@ body {
 }
 .navbar {
     position: fixed;
-    width: 70%;
+    width: 85%;
     z-index: 2;
     margin-top: -13px;
     background-color: #404040;
@@ -347,7 +347,7 @@ footer {
 }
 
 .section2 li {
-    padding: 20px;
+    padding: 18px;
 }
 
 
@@ -489,6 +489,7 @@ footer {
 .addInput {
     height: 75px;
     width: 100%;
+    margin-top: 10px;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;a
@@ -519,9 +520,18 @@ footer {
     .section4 {
         width: 90%;
         margin: 0 5%;
+        margin-top: 45px;
     }
     .addButton {
-        width: 40%;
+        width: 60%;
+        height: 70px;
+    }
+    .latestComments {
+        width: 90%;
+    }
+    .section2 li {
+        padding: 10px;
+        margin-left: 20%;
     }
     
  }
