@@ -39,7 +39,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "block"; // CHANGE THERE TO FIX
   } else {
     mybutton.style.display = "none";
   }
