@@ -547,10 +547,11 @@ footer {
     font-size: 25px;
     padding: 10px;
     border: 2px solid black;
+    border-radius: 5px;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
-    background-color: #404040;
+    background-color: #47BEB7;
     color: white;
     font-weight: bold;
 }
