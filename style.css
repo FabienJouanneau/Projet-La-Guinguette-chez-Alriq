@@ -624,7 +624,7 @@ footer {
         margin-top: 45px;
     }
     .addButton {
-        width: 40%;
+        width: 70%;
         height: 40px;
     }
     .latestComments {
@@ -634,6 +634,10 @@ footer {
         padding: 10px;
         margin-left: 20%;
     }
+    .section2 ul {
+        margin-right: 65px;
+        font-size: 0.8rem;
+    }
     #myBtn {
         padding: 0px;
     }
@@ -642,13 +646,16 @@ footer {
     }
     .fakeComment,
     .comment{
-        margin-right: 15px;
+        margin-right: 5px;
+    }
+    .allComments {
+        width: 100%;
+    }
+    #list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
     }
  }
-
- @media (max-width: 1000px) {
-    .allComments{
-        height: 100%;
-    }
- }
- 
