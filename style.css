@@ -387,7 +387,7 @@ div.blocContact h2{
 /*footer & comments*/
 
 footer {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 3px;
     padding: 10px;
     display: flex;
@@ -542,7 +542,8 @@ footer {
 
 .latestComments {
     width: 25%;
-    margin: 40px auto;
+    margin: 20px auto;
+    margin-top: 60px;
     text-align: center;
     font-size: 25px;
     padding: 10px;
